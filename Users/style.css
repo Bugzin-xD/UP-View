@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ececec;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.resume-container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, blueviolet, #6a11cb);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+}
+
+.resume-header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.subtitle {
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: blueviolet;
+    padding: 0.5px;
+    border-radius: 50px;
+}
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h2 {
+    font-size: 1.2rem;
+    border-left: 4px solid blueviolet;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.resume-section p {
+    color: #b0b0b0;
+    font-size: 1rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.social-link {
+    display: block;
+    background-color: #252525;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+}
+
+.social-link:hover {
+    background-color: blueviolet;
+    border-color: blueviolet;
+    transform: translateY(-2px);
+}
+
+.email {
+    grid-column: span 2;
+    background: transparent;
+    border: 1px dashed blueviolet;
+    color: blueviolet;
+}
+
+.email:hover {
+    background: rgba(138, 43, 226, 0.1);
+    color: white;
+}
+
+.resume-footer {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.resume-footer a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.resume-footer a:hover {
+    color: blueviolet;
+}
+
+@media (max-width: 480px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+    .email {
+        grid-column: span 1;
+    }
+}
